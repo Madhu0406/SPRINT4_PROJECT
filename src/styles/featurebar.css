@@ -1,0 +1,90 @@
+.featurebar-root {
+  width: 100%;
+  background: #fff;
+  padding: 2.5rem 0 2rem 0;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.featurebar-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.featurebar-mobile {
+  display: none;
+}
+
+
+.featurebar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 1.2rem;
+  min-width: 260px;
+  max-width: 340px;
+  height: 170px;
+  margin: 0 1rem;
+  padding: 1.4rem 1.3rem;
+  box-shadow: none;
+  text-align: center;
+}
+
+.featurebar-icon {
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.featurebar-title {
+  font-weight: 700;
+  font-size: 1.18rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.featurebar-desc {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+
+.react-slideshow-container .indicators {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.react-slideshow-container .each-slideshow-indicator {
+  width: 11px;
+  height: 11px;
+  background: #222;
+  opacity: 0.18;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+.react-slideshow-container .active {
+  opacity: 1;
+  background: #222;
+}
+
+@media (max-width: 900px) {
+  .featurebar-desktop {
+    display: none;
+  }
+  .featurebar-mobile {
+    display: block;
+    width: 100%;
+  }
+  .featurebar-card {
+    min-width: 90vw;
+    max-width: 95vw;
+    height: 170px;
+    margin: 0 auto;
+    padding: 1.2rem 1rem;
+    box-shadow: none;
+  }
+}
